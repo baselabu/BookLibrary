@@ -1,0 +1,25 @@
+﻿@page
+@model CRUD_Application.Pages.Book.DetailsModel
+@using CRUD_Application.Models
+@{
+    ViewData["Title"] = "Book Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr>
+
+<div>
+    <h3>Book Information</h3>
+    <div>
+        <h4>Title: @Model.Books.BookTitle</h4>
+        <p>Description: @Model.Books.BookDescription</p>
+        <p>Author: @Model.Books.BookAuthor</p>
+    </div>
+    <a asp-page="./Edit" asp-route-id="@Model.Books.Bookid" class="btn btn-primary">Edit</a>
+    <a asp-page="./Delete" asp-route-id="@Model.Books.Bookid" class="btn btn-danger">Delete</a>
+    <a asp-page="./Index" class="btn btn-secondary">Back to List</a>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

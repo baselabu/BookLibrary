@@ -1,0 +1,35 @@
+﻿@page
+@model CRUD_Application.Pages.Book.IndexModel
+@using CRUD_Application.Models
+@{
+    ViewData["Title"] = "Books";
+}
+
+<h1>Books list</h1>
+<hr>
+<a class="btn btn-primary mb-3" asp-page="Creat">Create New Book</a>
+<table class="table table-responsive table-striped table-hover algin-middle">
+    <thead>
+        <tr class="table-dark text-center">
+            <th>Book Title</th>
+            <th>Book Description</th>
+            <th>Book Author</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var book in Model.Books)
+        {
+            <tr class="text-center">
+                <td>@book.BookTitle</td>
+                <td>@book.BookDescription</td>
+                <td>@book.BookAuthor</td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@book.Bookid" class="btn btn-sm btn-primary">Edit</a>
+                    <a asp-page="./Details" asp-route-id="@book.Bookid" class="btn btn-sm btn-success">Details</a>
+                    <a asp-page="./Delete" asp-route-id="@book.Bookid" class="btn btn-sm btn-danger">Delete</a>
+            </tr>
+        }
+    </tbody>
+    
+</table>

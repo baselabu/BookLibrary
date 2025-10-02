@@ -1,0 +1,28 @@
+﻿@page
+@model CRUD_Application.Pages.Book.DeleteModel
+@using CRUD_Application.Models
+@{
+    ViewData["Title"] = "Delete Book";
+}
+
+<h1>Delete Book</h1>
+<hr>
+
+<div>
+    <h3>Are you sure you want to delete this book?</h3>
+    <div>
+        <h4>Book Details</h4>
+        <p>Title: @Model.Books.BookTitle</p>
+        <p>Description: @Model.Books.BookDescription</p>
+        <p>Author: @Model.Books.BookAuthor</p>
+    </div>
+    <form method="post">
+        <input type="hidden" asp-for="Books.Bookid" />
+        <button type="submit" value="Delete" class="btn btn-danger">Delete</button>
+        <a asp-page="./Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
