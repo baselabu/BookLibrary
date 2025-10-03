@@ -253,3 +253,4 @@ D:\2025_26-semester\C#learning\SmallProjects\CRUD_Application\CRUD_Application\o
 D:\2025_26-semester\C#learning\SmallProjects\CRUD_Application\CRUD_Application\obj\Debug\net10.0\CRUD_Application.genruntimeconfig.cache
 D:\2025_26-semester\C#learning\SmallProjects\CRUD_Application\CRUD_Application\obj\Debug\net10.0\ref\CRUD_Application.dll
 D:\2025_26-semester\C#learning\SmallProjects\CRUD_Application\CRUD_Application\obj\Debug\net10.0\compressed\rmby29mj5c-{0}-vtrdvt79w1-vtrdvt79w1.gz
+D:\2025_26-semester\C#learning\SmallProjects\CRUD_Application\CRUD_Application\obj\Debug\net10.0\CRUD_Application.sourcelink.json
